@@ -26,19 +26,31 @@ This application bridges the gap between your **Twitch Chat** and your **Cider M
 
 ## ⚙️ How to Use
 
-### 1. Connect to Twitch
-* Click the **"Login with Twitch"** button in the app.
-* A browser window will open asking you to authorize the application.
-* Once authorized, the **Twitch Status** light in the footer will turn **Green**.
+### 1. Connect to Twitch & Cider
+* Click **"Login with Twitch"** to authorize the bot.
+* Open **Cider** and ensure music is playing or paused (not closed).
+* Wait for both status lights in the footer to turn **Green**.
 
-### 2. Connect to Cider
-* Open your **Cider** music app on your computer.
-* Start playing music or ensure the app is active.
-* The **Cider Status** light in the footer will turn **Green** once it detects Cider is running.
+### 2. Choose Your Request Mode
+You can use this bot in two ways: **Free Commands** or **Channel Points**.
 
-### 3. Let Chat Request Songs!
-* Your viewers can now type `!sr [Song Name]` (e.g., `!sr Hotel California`) in your chat.
-* The bot will search Apple Music, find the best match, and add it to your Cider queue.
+#### Option A: Free Commands (Default)
+* **How it works:** Any viewer can type `!sr [song name]` in chat to request a song for free.
+* **Setup:** No extra setup required. This is enabled by default.
+
+#### Option B: Channel Points Mode
+* **How it works:** Viewers must spend Channel Points to request a song. The `!sr` command will be **disabled** for normal users so they cannot bypass the cost.
+* **Setup:**
+    1. Open the **Cider Song Request App** and go to the **Settings** tab.
+    2. Check the box **"Use Channel Points"**.
+    3. Enter the **Title** you want for the reward (e.g., "Song Request") and the **Cost** (e.g., 500).
+    4. Click the **"Create Reward"** (or "Save") button.
+    5. The app will automatically communicate with Twitch to create the reward for you.
+    > **Note:** If you ever delete the reward from your Twitch Dashboard, you can recreate it here.
+
+### 3. Managing the Queue
+* The app interface shows the current list of requested songs.
+* You can **Skip**, **Remove**, or **Clear** the queue directly from the app.
 
 ## 💡 Feedback & Support
 I welcome suggestions for new features or improvements! However, please keep in mind:
